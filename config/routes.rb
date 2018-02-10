@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  root "pages#home"
+  devise_for :chefs
+  root 'welcome#index'
+
+  # root "pages#home"
   get 'pages/home', to: 'pages#home'
   
   #resources :recipes
