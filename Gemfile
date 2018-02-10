@@ -15,7 +15,9 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
 gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
-# --------- End ADD ------------
+# -------------------------------
+gem 'stripe'
+# --------- End ADD -------------
 
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
