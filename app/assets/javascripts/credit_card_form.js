@@ -22,7 +22,7 @@ $(".cc_form").on('submit', submitHandler);
   $form.find("input[type=submit]").prop("disabled", false);
   } else {
   token = response.id;
-  $form.append($("<input type=\"hidden\" name=\"payment[token]\" />").val(token));
+  $form.append($("<input type=\"hidden\" name=\"chef[token]\" />").val(token));
   $("[data-stripe=number]").remove();
   $("[data-stripe=cvc]").remove();
   $("[data-stripe=exp-year]").remove();
