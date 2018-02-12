@@ -6,7 +6,9 @@ class SessionsController < ApplicationController
 
 def create
     chef = Chef.find_by(email: params[:session][:email].downcase)
-    if chef && chef.authenticate(params[:session][:password])
+    # if chef && chef.authenticate(params[:session][:password])
+    if chef
+    # if chef && chef.find_by_name()
       session[:chef_id] = chef.id
       cookies.signed[:chef_id] = chef.id
       flash[:success] = "You have successfully logged in"
